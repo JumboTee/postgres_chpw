@@ -49,3 +49,20 @@
  - Remember, that by default DB for pgcron is "postgres"
 
  - Postgis version is 2.5
+
+
+### After build actions
+
+ - Add to /var/lib/postgresql/data/postgresql.conf:
+	shared_preload_libraries = 'pg_cron, pg_stat_statements, pg_hint_plan'
+	cron.database_name = 'postgres'
+
+ - After first run the container, need to create extensions:
+	CREATE EXTENSION pg_cron;
+	LOAD 'pg_hint_plan';
+	CREATE EXTENSION postgis;
+	CREATE EXTENSION dblink;
+	CREATE EXTENSION mysql_fdw;
+	CREATE EXTENSION oracle_fdw ;
+	CREATE EXTENSION postgres_fdw;
+	CREATE EXTENSION tds_fdw;
