@@ -58,11 +58,11 @@
 	<p>cron.database_name = 'postgres'</p>
 
  - After first run the container, need to create extensions:
-	CREATE EXTENSION pg_cron;
-	LOAD 'pg_hint_plan';
-	CREATE EXTENSION postgis;
-	CREATE EXTENSION dblink;
-	CREATE EXTENSION mysql_fdw;
-	CREATE EXTENSION oracle_fdw ;
-	CREATE EXTENSION postgres_fdw;
-	CREATE EXTENSION tds_fdw;
+	<p>CREATE EXTENSION pg_cron;</p>
+	<p>LOAD 'pg_hint_plan';</p>
+	<p>CREATE EXTENSION postgis;</p>
+	<p>CREATE EXTENSION dblink;</p>
+	<p>CREATE EXTENSION mysql_fdw;</p>
+	<p>CREATE EXTENSION oracle_fdw ;</p>
+	<p>CREATE EXTENSION postgres_fdw;</p>
+	<p>CREATE EXTENSION tds_fdw;</p>
