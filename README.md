@@ -54,8 +54,8 @@
 ### After build actions
 
  - Add to /var/lib/postgresql/data/postgresql.conf:
-	shared_preload_libraries = 'pg_cron, pg_stat_statements, pg_hint_plan'
-	cron.database_name = 'postgres'
+	<p>shared_preload_libraries = 'pg_cron, pg_stat_statements, pg_hint_plan'</p>
+	<p>cron.database_name = 'postgres'</p>
 
  - After first run the container, need to create extensions:
 	CREATE EXTENSION pg_cron;
